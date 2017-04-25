@@ -1,0 +1,406 @@
+/*VARIABLES */
+/*GENERALLY */
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col-"] {
+  width: 100%;
+  padding: 12px;
+  float: left; }
+
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif; }
+
+/*MENU */
+header {
+  background-color: #313332;
+  height: 8%; }
+  header nav a img {
+    height: 100px;
+    width: 150px; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right; }
+  header nav ul li a {
+    line-height: 100px;
+    padding: 0 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px; }
+  header nav ul li a:hover {
+    color: #00c7e8; }
+  header nav img {
+    padding: 10px 0; }
+  header nav ul li {
+    display: inline-block; }
+
+#color {
+  color: #00c7e8; }
+
+/*JUMBOTRON */
+.hero {
+  background-image: url("https://images.pexels.com/photos/175960/pexels-photo-175960.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+
+.slogan {
+  background-color: rgba(49, 51, 50, 0.6);
+  width: 50%;
+  height: 30%;
+  float: right;
+  position: relative;
+  top: 35%; }
+  .slogan h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200; }
+
+/*ICONS */
+.icons > .container {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1200px; }
+
+.icon-btn {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #313332;
+  border-radius: 15%;
+  padding: 8px;
+  color: white;
+  margin: 30px;
+  background-color: #313332;
+  display: inline-block;
+  line-height: 140px; }
+
+.icons {
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px; }
+
+.motto {
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  color: #919191;
+  padding: 30px; }
+
+#slogan {
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #313332; }
+
+#work {
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: none;
+  color: #919191;
+  line-height: 200%;
+  text-align: justify; }
+
+.icon h2 {
+  text-transform: uppercase;
+  color: #313332; }
+.icon i:hover {
+  background-color: #00c7e8;
+  border-color: #00c7e8; }
+.icon i:hover ~ h2 {
+  color: #00c7e8; }
+
+/*GALLERY */
+.gallery [class*=col-] {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .gallery [class*=col-] img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0; }
+
+.items {
+  float: left;
+  position: relative; }
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .layer a i {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px; }
+
+.layer:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-duration: 0.5s; }
+  .layer:hover a i {
+    display: inline-block; }
+
+/*TEAM */
+.team {
+  height: auto; }
+  .team h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #313332; }
+
+.photo {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%; }
+
+.person {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  margin: 20px auto 20px auto;
+  text-align: center; }
+  .person h2 {
+    text-align: center;
+    color: #313332; }
+
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .description h3 {
+    display: none;
+    font-size: 25px;
+    color: white; }
+
+.description:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-duration: 0.6s; }
+  .description:hover h3 {
+    display: inline-block; }
+
+/*NUMBERS */
+.numbers h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 60px;
+  padding: 0;
+  color: #313332; }
+.numbers p {
+  text-align: center;
+  color: #00c7e8;
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-transform: uppercase; }
+
+/*FOOTER */
+.footer {
+  background-color: #313332;
+  color: white;
+  height: auto;
+  margin: 0 auto;
+  line-height: 27px; }
+  .footer h2 {
+    font-size: 30px; }
+  .footer h2::after {
+    padding-left: 10px;
+    letter-spacing: -2px;
+    content: "--------------";
+    color: white; }
+  .footer i {
+    width: 45px;
+    height: 45px;
+    border: 0px solid #00c7e8;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    background-color: #00c7e8;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    line-height: 35px; }
+  .footer i:hover {
+    background-color: white;
+    color: #00c7e8; }
+
+.foot {
+  font-size: 20px;
+  max-width: 90%;
+  font-weight: 100;
+  text-align: left;
+  margin: 5px; }
+
+.contact {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  margin: 5px; }
+
+/*COPYRIGHTS */
+.copyrights {
+  text-align: center;
+  background-color: #252726;
+  height: auto;
+  font-size: 20px;
+  color: #fontColor-1;
+  width: 100%;
+  padding: 5px; }
+
+/*MEDIA */
+@media (max-width: 767px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; }
+
+  header .container nav ul {
+    float: none; }
+  header .container nav ul li a {
+    float: none; }
+  header .container nav ul li {
+    display: block;
+    text-align: center; }
+  header nav {
+    text-align: center; }
+
+  .slogan h1 {
+    font-size: 25px;
+    padding: 5px; }
+
+  .gallery .layer:hover {
+    background: none; }
+
+  .layer a i {
+    display: inline-block; }
+
+  .picture img {
+    display: none; }
+
+  .footer {
+    text-align: center; }
+    .footer .container {
+      padding: 20px; }
+
+  .footer [class*="col-"] {
+    float: none; }
+
+  .picture [class*="col-"] {
+    text-align: center; }
+
+  #italic {
+    text-align: center;
+    margin-left: 0; }
+
+  .description h3 {
+    display: inline-block; }
+
+  .description:hover {
+    background-color: none; } }
+@media (min-width: 768px) {
+  /* For desktop: */
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style6.2.css.map */

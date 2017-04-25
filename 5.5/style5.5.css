@@ -1,0 +1,110 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*NAVBAR*/
+
+.navbar {
+	height: auto;
+	background-color: rgb(20, 160, 30);
+	color: white;
+}
+
+.navbar-header > a > img {
+	height: 45px;
+	width: 45px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.navbar button {
+	margin: 20px 20px 20px 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {
+	background-color: white;
+	border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: blue;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover span.icon-bar {
+	background-color: white;
+}
+
+.navbar ul li {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	font-size: 20px;
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: black;
+}
+
+/*CAROUSEL*/
+
+#myCarousel {
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 8%;
+}
+
+#myCarousel img {
+	height: 100vh;
+	width: 100%;
+	opacity: 0.8;	
+}
+
+#myCarousel ol li.active {
+	background-color: rgb(20, 160, 30);
+	border-color: rgb(20, 160, 30);
+}
+
+.carousel-control:hover {
+	color: rgb(20, 160, 30);
+}
+
+/*TABS*/
+
+.tabsContent {
+	border-color: rgb(20, 160, 30);
+	color: rgb(20, 160, 30);
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+	color: white;
+	background-color: rgb(20, 160, 30);
+}
+
+/*MODAL*/
+
+.niedzwiedzButton {
+	background-color: rgb(20, 160, 30);
+	text-align: center;
+	margin: 20px 40% 20px 40%;
+}
+
+.closeButton {
+	background-color: rgb(20, 160, 30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

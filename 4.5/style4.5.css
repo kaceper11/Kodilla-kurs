@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+ul {
+	display: flex;
+}
+
+ul li {
+	justify-content: flex-end;
+}
+
+.jumbotron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container p {
+	display: flex;
+	min-width: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+}
+
+.firm {
+	flex-grow: 2;
+}

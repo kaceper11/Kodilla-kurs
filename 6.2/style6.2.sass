@@ -1,0 +1,462 @@
+/*VARIABLES*/
+
+$fonts: 'Open Sans', sans-serif
+$adventure-blue: rgb(0, 199, 232)
+$backgroundColor-sections: rgb(49, 51,50)
+$backgroundColor-hero: rgba(49, 51, 50, 0.6)
+$backgroundLayer: rgba(0, 0, 0, 0.5)
+$backgroundCopyrights: rgb(37,39,38)
+$fontColor-1: white
+$fontColor-2: rgb(145, 145, 145)
+
+/*GENERALLY*/
+
+* 
+    box-sizing: border-box
+
+.container 
+    width: 100%
+    max-width: 1200px
+    margin: auto
+
+.row:before, .row:after 
+    content: ""
+    display: table
+    clear: both
+ 
+
+[class*="col-"] 
+    width: 100%
+    padding: 12px
+    float: left
+
+body
+    margin: 0 auto
+    font-family: $fonts
+
+/*MENU*/
+
+header 
+    background-color: $backgroundColor-sections
+    height: 7%
+
+    nav a img
+        height: 100px
+        width: 150px
+    
+    nav ul 
+        margin: 0
+        padding: 0
+        list-style-type: none
+        float: right
+
+    nav ul li a 
+        line-height: 100px
+        padding: 0 20px
+        display: inline-block
+        color: $fontColor-1
+        text-decoration: none
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 20px
+
+    nav ul li a:hover 
+        color: $adventure-blue
+
+    nav img 
+        padding: 10px 0
+
+    nav ul li 
+        display: inline-block
+
+#color 
+    color: $adventure-blue
+
+/*JUMBOTRON*/
+
+.hero 
+    background-image: url("https://images.pexels.com/photos/175960/pexels-photo-175960.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
+    height: 80vh
+    background-size: cover
+    background-position: center
+
+.slogan 
+    background-color: $backgroundColor-hero
+    width: 50%
+    height: 30%
+    float: right
+    position: relative
+    top: 35%
+
+    h1 
+        text-align: center
+        font-size: 60px
+        color: $fontColor-1
+        text-transform: uppercase
+        font-weight: 200
+
+/*ICONS*/
+
+.icons > .container 
+    margin: 50px auto
+    width: 100%
+    max-width: 1200px
+
+.icon-btn 
+    width: 150px
+    height: 150px
+    border: 1px solid $backgroundColor-sections
+    border-radius: 15%
+    padding: 8px
+    color: $fontColor-1
+    margin: 30px
+    background-color: $backgroundColor-sections
+    display: inline-block
+    line-height: 140px
+
+.icons 
+    margin: 0 auto
+    text-align: center
+    padding: 70px
+
+.motto 
+    font-size: 20px
+    text-align: center
+    font-weight: lighter
+    color: $fontColor-2
+    padding: 30px
+
+#slogan 
+    margin-top: 80px 
+    text-transform: uppercase
+    font-weight: bolder
+    font-size: 50px
+    color: $backgroundColor-sections
+
+#work 
+    font-size: 20px
+    font-weight: 200
+    text-transform: none
+    color: $fontColor-2
+    line-height: 200%
+    text-align: justify
+
+.icon
+
+    h2 
+        text-transform: uppercase
+        color: $backgroundColor-sections
+
+    i:hover 
+        background-color: $adventure-blue
+        border-color: $adventure-blue
+
+    i:hover ~ h2 
+        color: $adventure-blue
+
+/*GALLERY*/
+
+.gallery [class*=col-] 
+    padding: 0
+    max-width: 1200px
+    margin: 0 auto
+
+    img 
+        display: block
+        width: 100%
+        height: 250px
+        margin: 0   
+        padding: 0
+
+.items 
+    float: left
+    position: relative
+
+.layer  
+    position: absolute
+    width: 100%
+    height: 100%
+    text-align: center
+    color: $fontColor-1
+    display: flex
+    justify-content: center
+    align-items: center
+
+    a i 
+        display: none
+        font-size: 30px
+        color: $fontColor-1
+        padding: 10px
+
+.layer:hover 
+    background-color: $backgroundLayer
+    cursor: pointer 
+    transition-duration: 0.5s
+
+    a i 
+        display: inline-block
+
+/*TEAM*/
+
+.team 
+    height: auto
+
+    h1  
+        text-align: center
+        font-weight: 900
+        font-size: 40px
+        color: $backgroundColor-sections
+
+.photo 
+    border-radius: 50%
+    width: 100% 
+    height: 100%
+
+.person 
+    position: relative
+    height: 240px
+    width: 240px
+    margin: 20px auto 20px auto
+    text-align: center
+
+    h2 
+        text-align: center
+        color: $backgroundColor-sections
+
+.description 
+    position: absolute
+    width: 100%
+    height: 100%
+    text-align: center
+    border-radius: 50%
+    color: $fontColor-1
+    display: flex
+    justify-content: center
+    align-items: center
+
+    h3 
+        display: none
+        font-size: 25px
+        color: $fontColor-1
+ 
+.description:hover 
+    background-color: $backgroundLayer
+    cursor: pointer
+    transition-duration: 0.6s
+
+    h3 
+        display: inline-block
+
+/*NUMBERS*/
+
+.numbers
+
+    h2 
+        text-align: center
+        font-size: 50px
+        font-weight: 900
+        margin-bottom: 5px
+        margin-top: 60px
+        padding: 0
+        color: $backgroundColor-sections
+    
+    p 
+        text-align: center
+        color: $adventure-blue
+        font-size: 25px 
+        font-weight: 800
+        margin-top: 0px
+        margin-bottom: 30px
+        text-transform: uppercase
+
+/*FOOTER*/
+
+.footer 
+    background-color: $backgroundColor-sections
+    color: $fontColor-1
+    height: auto
+    margin: 0 auto
+    line-height: 27px
+
+    h2 
+        font-size: 30px
+
+    h2::after 
+        padding-left: 10px
+        letter-spacing: -2px
+        content: "--------------"
+        color: $fontColor-1
+
+    i 
+        width: 45px 
+        height: 45px
+        border: 0px solid $adventure-blue
+        padding: 5px    
+        color: $fontColor-1
+        margin: 5px
+        background-color: $adventure-blue
+        display: inline-block   
+        text-align: center
+        font-size: 27px
+        line-height: 35px
+
+    i:hover 
+        background-color: $fontColor-1
+        color: $adventure-blue
+
+.foot 
+    font-size: 20px
+    max-width: 90%
+    font-weight: 100
+    text-align: left
+    margin: 5px
+
+.contact 
+    font-size: 20px
+    font-weight: 800
+    text-align: left
+    margin: 5px
+
+/*COPYRIGHTS*/
+
+.copyrights 
+    text-align: center
+    background-color: $backgroundCopyrights
+    height: auto
+    font-size: 20px
+    color: #fontColor-1
+    width: 100%
+    padding: 5px
+
+/*MEDIA*/
+
+@media (max-width: 767px) 
+    
+    /* For tablets: */
+
+    .col-s-1 
+        width: 8.33%
+        
+    .col-s-2 
+        width: 16.66%
+                
+    .col-s-3 
+        width: 25%
+        
+    .col-s-4 
+        width: 33.33%
+        
+    .col-s-5 
+        width: 41.66%
+        
+    .col-s-6 
+        width: 50%
+        
+    .col-s-7 
+        width: 58.33%
+        
+    .col-s-8 
+        width: 66.66%
+        
+    .col-s-9 
+        width: 75%
+        
+    .col-s-10 
+        width: 83.33%
+        
+    .col-s-11 
+        width: 91.66%
+        
+    .col-s-12 
+        width: 100%
+
+    header
+        .container nav ul 
+            float: none
+
+        .container nav ul li a 
+            float: none
+
+        .container nav ul li 
+            display: block
+            text-align: center
+    
+        nav 
+            text-align: center 
+
+    .slogan h1 
+        font-size: 25px
+        padding: 5px
+
+    .gallery .layer:hover 
+        background: none
+
+    .layer a i 
+        display: inline-block
+   
+    .picture img 
+        display: none
+    
+    .footer 
+        text-align: center
+        
+        .container 
+            padding: 20px
+    
+    .footer [class*="col-"] 
+        float: none
+    
+    .picture [class*="col-"] 
+        text-align: center
+
+    #italic 
+        text-align: center
+        margin-left: 0
+
+    .description h3 
+        display: inline-block
+
+    .description:hover 
+        background-color: none
+    
+@media (min-width: 768px) 
+
+    /* For desktop: */
+
+    .col-m-1 
+        width: 8.33%
+        
+    .col-m-2 
+        width: 16.66%
+        
+    .col-m-3
+        width: 25%
+        
+    .col-m-4 
+        width: 33.33%
+        
+    .col-m-5 
+        width: 41.66%
+        
+    .col-m-6 
+        width: 50%
+        
+    .col-m-7
+        width: 58.33%
+        
+    .col-m-8 
+        width: 66.66%
+        
+    .col-m-9
+        width: 75%
+        
+    .col-m-10 
+        width: 83.33%
+        
+    .col-m-11 
+        width: 91.66%
+        
+    .col-m-12 
+        width: 100%
+        
+

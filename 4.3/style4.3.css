@@ -1,0 +1,180 @@
+* { 
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+	background-color: rgb(122, 204, 200);
+	height: 10%;
+}
+
+header > .container > nav > a > img {
+	height: 80px;
+	width: 130px;
+}
+
+header > .container > nav > ul > li > a {
+	line-height: 80px;
+	padding: 0 20px;
+	display: block;
+	color: rgb(32, 69, 124);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+	float: right;
+}
+
+header > .container > nav > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header > .container > nav > ul > li > a:hover {
+	color: rgb(0, 0, 255);
+	font-weight: 900;
+}
+
+header > .container > nav > img {
+	padding: 10px 0;
+}
+
+header > .container > nav > ul > li {
+	display: inline-block;
+}
+
+/*HERO*/
+
+.hero {
+	background-image: url("background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding-top: 42vh;
+}
+
+.hero button {
+	cursor: pointer;
+	border: none;
+	border-radius: 5%;
+	background-color: rgb(0,0,255);
+	color: white;
+	font-size: 30px;
+	padding: 15px;
+	font-family: 'Quicksand', sans-serif;
+	width: 150px;
+}
+
+.hero button:hover {
+	background-color: rgb(122, 204, 200);
+	color: rgb(32, 69, 124);
+}
+
+/*GALLERY */
+
+.gallery {
+	margin: 5vh 0 5vh 0;
+	width: 100%;
+}
+
+.photo {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.photo:last-of-type {
+	margin-right: 0;
+}
+
+.photo img, .maps img { 
+	width: 100%; 
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: rgb(122, 204, 200);
+	text-align: center;
+	height: 60px;
+	margin: 0;
+}
+
+.footer h1 {
+	color: color: rgb(32, 69, 124);
+	font-size: 20px;
+	line-height: 60px;
+}
+
+@media(min-width: 769px) and (max-width: 1200px) {
+
+	.photo {
+		margin-right: 2%;
+	}
+
+	.photo:last-of-type {
+		margin: 0;
+	}
+
+	header > .container > nav > ul > li > a {
+		padding: 0 10px;
+	}
+	
+	header nav {
+		text-align: center;	
+	}
+}
+
+@media(max-width: 768px) {
+	
+	body {
+		padding: 5px;
+	}
+
+	.photo {
+		float: none;
+		width: 100%;
+		padding: 10px;
+	}
+
+	header > .container > nav > ul {
+		float: none;
+	}
+
+	header > .container > nav > ul > li > a {
+		float: none;
+	}
+
+	header > .container > nav > ul > li {
+		display: block;
+		text-align: center;
+	}
+
+	header img {
+		margin: 0 30% 0 30%;
+	}
+	
+	header nav {
+		text-align: center;	
+	}
+}
