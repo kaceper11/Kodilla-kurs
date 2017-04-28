@@ -4,6 +4,6 @@ add.addEventListener('click', function () {
 
     var i = list.getElementsByTagName('li').length;
     console.log(i);
-    list.innerHTML = list.innerHTML + '<li>item</li>' + i;
+    list.innerHTML = list.innerHTML + '<li>item ' + i + '</li>' ;
 
 })
