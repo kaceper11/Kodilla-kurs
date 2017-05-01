@@ -71,7 +71,7 @@ var x = Math.floor(Math.random()*3);
 
 function getComputerPick() {
     var possiblePicks = ['rock', 'paper', 'scissors'];
-    return possiblePicks[Math.floor(Math.random()*3)];
+    return possiblePicks[x];
 }
 
 var playerPickElem = document.getElementById('js-playerPick'),
