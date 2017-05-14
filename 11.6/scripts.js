@@ -36,24 +36,23 @@ $(function() {
             $column.append($columnCardList);
                 return $column;
         }
+    }
 
-        Column.prototype = {
-            addCard: function(card) {
-                this.$element.children('ul').append(card.$element);
-            },
-            removeColumn: function() {
-                this.$element.remove();
-            }
-        };
-        
-        function addCard() {
-            this.$element.children('ul').append(card.$element);    
-        }
-        
-        function removeColumn() {
+    Column.prototype = {
+        addCard: function(card) {
+            this.$element.children('ul').append(card.$element);
+        },
+        removeColumn: function() {
             this.$element.remove();
         }
+    };
 
+    function addCard() {
+        this.$element.children('ul').append(card.$element);
+    }
+
+    function removeColumn() {
+        this.$element.remove();
     }
 
     function Card(description) {
@@ -76,47 +75,48 @@ $(function() {
                 return $card;
         }
 
-        Card.prototype = {
-            removeCard: function() {
-                this.$element.remove();
-            }
-        };
-
-        var board = {
-            name: 'Tablica Kanban',
-            addColumn: function(column) {
-                this.$element.append(column.$element);
-                initSortable();
-            },
-            $element: $('#board .column-container')
-        };
-
-        function initSortable() {
-            $('.column-card-list').sortable({
-                connectWith: '.column-card-list',
-                placeholder: 'card-placeholder'
-            }).disableSelection();
-        }
-
-        $('.create-column').click(function(){
-                var name = prompt('Wpisz nazwę kolumny');
-                var column = new Column(name);
-                board.addColumn(column);
-            });
-
-        var todoColumn = new Column('Do zrobienia');
-        var doingColumn = new Column('W trakcie');
-        var doneColumn = new Column('Skończone');
-
-        board.addColumn(todoColumn);
-        board.addColumn(doingColumn);
-        board.addColumn(doneColumn);
-
-        var card1 = new Card('Nowe zadanie');
-        var card2 = new Card('Stworzyc tablice kanban');
-
-        todoColumn.addCard(card1);
-        doingColumn.addCard(card2);
     }
+
+    Card.prototype = {
+        removeCard: function() {
+            this.$element.remove();
+        }
+    };
+
+    var board = {
+        name: 'Tablica Kanban',
+        addColumn: function(column) {
+            this.$element.append(column.$element);
+            initSortable();
+        },
+        $element: $('#board .column-container')
+    };
+
+    function initSortable() {
+        $('.column-card-list').sortable({
+            connectWith: '.column-card-list',
+            placeholder: 'card-placeholder'
+        }).disableSelection();
+    }
+
+    $('.create-column').click(function(){
+        var name = prompt('Wpisz nazwę kolumny');
+        var column = new Column(name);
+        board.addColumn(column);
+    });
+
+    var todoColumn = new Column('Do zrobienia');
+    var doingColumn = new Column('W trakcie');
+    var doneColumn = new Column('Skończone');
+
+    board.addColumn(todoColumn);
+    board.addColumn(doingColumn);
+    board.addColumn(doneColumn);
+
+    var card1 = new Card('Nowe zadanie');
+    var card2 = new Card('Stworzyc tablice kanban');
+
+    todoColumn.addCard(card1);
+    doingColumn.addCard(card2);
 
 });
