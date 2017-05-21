@@ -1,0 +1,50 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-color: rgba(181, 20, 22, 0.8);
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+button {
+	width: 150px;
+	height: 45px;
+	border: none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 17.8%;
+	left: 32%;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.input-country {
+	text-align: center;
+}
+
+input {
+	height: 40px;
+	width: 250px;
+	font-size: 30px;
+}
+
+.table {
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+
+table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 5px 10px 5px 10px;
+	font-size: 20px;
+}
+
+
+
+
