@@ -15,9 +15,9 @@ button {
 	background-color: black;
 	color: white;
 	cursor: pointer;
-	position: absolute;
-	top: 17.8%;
-	left: 32%;
+	position: relative;
+	top: 43px;
+	left: 32.2%;
 	font-size: 15px;
 	font-weight: 700;
 }

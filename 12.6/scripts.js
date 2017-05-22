@@ -1,7 +1,6 @@
-var url = 'https://restcountries.eu/rest/v2/name/';
-var countriesList = $('#addCountry');
-var flag = $('.flag');
-var name = $('.name');
+var url = 'https://restcountries.eu/rest/v1/name/';
+var flagDiv = $('.flag');
+var nameDiv = $('.name');
 
 $('#search').click(searchCountries);
 
@@ -16,8 +15,9 @@ function searchCountries() {
 }
 
 function showCountriesList(resp) {
-    countriesList.empty();
+    nameDiv.empty();
     resp.forEach(function(item) {
-        $('<h1>').text(item.name).appendTo(name);
+        $('<h1>').text(item.name).appendTo(nameDiv);
+        $('<img>').attr('src', item.flag).appendTo(flagDiv);
     });
 }
